@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Eventos</title>
+
+    <!--JS-->
+    <script>
+
+        //siteProway
+        function siteProway() {
+            window.location.assign("https://github.com");
+        }
+
+        //popUp
+        function popUp() {
+            alert("Seja bem vindo ao JS");
+        }
+
+        //popUp
+        function texto() {
+            document.getElementById("exibirTexto").innerHTML = document.getElementById("campoTexto").value;
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <button onclick="siteProway()">GitHub</button>
+
+    <br>
+    <br>
+
+    <button ondblclick="popUp()">Pop-up</button>
+
+    <br>
+    <br>
+
+    <input type="text" onkeyup="texto()" id="campoTexto">
+    <h1 id="exibirTexto"></h1>
+
+</body>
+
+</html>
